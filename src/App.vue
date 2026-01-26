@@ -2,7 +2,6 @@
 import { ref, onMounted, watch } from 'vue';
 import { RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
-import CustomCursor from './components/CustomCursor.vue';
 
 const isDark = ref(true);
 
@@ -35,20 +34,32 @@ watch(isDark, updateTheme);
 </script>
 
 <template>
-  <div class="min-h-screen transition-colors duration-300"
-       :class="isDark ? 'bg-slate-900' : 'bg-slate-50'">
-    <CustomCursor />
+  <div class="min-h-screen transition-colors duration-500 ease-in-out relative"
+       :class="isDark ? 'bg-[#020617] text-slate-100' : 'bg-slate-50 text-slate-900'">
+    
+
+    <div class="grain-overlay mix-blend-overlay opacity-20 pointer-events-none fixed inset-0 z-[99]"></div>
+    
     <Navbar :is-dark="isDark" @toggle-theme="toggleTheme" />
+    
     <main>
       <router-view :is-dark="isDark" />
     </main>
-    <footer class="py-6 text-center text-sm border-t" 
-            :class="isDark ? 'bg-slate-900 text-slate-500 border-slate-800' : 'bg-slate-50 text-slate-400 border-slate-200'">
-      <p>&copy; 2026 Rahmatjon Matkarimov. All rights reserved.</p>
+    
+    <footer class="py-12 text-center text-sm relative z-10">
+       <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-800 to-transparent"></div>
+       <div class="container mx-auto px-6">
+          <p class="text-slate-500 dark:text-slate-500 font-medium">
+            &copy; 2026 Rahmatjon Matkarimov. <span class="hidden sm:inline">Crafted with precision.</span>
+          </p>
+       </div>
     </footer>
   </div>
 </template>
 
 <style>
-/* Global styles if needed */
+
+::selection {
+    @apply bg-primary/30 text-white;
+}
 </style>
