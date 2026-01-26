@@ -30,15 +30,14 @@ const { personalInfo } = storeToRefs(store);
       <div class="max-w-3xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl relative group animate-fade-in-up" style="animation-delay: 0.3s"
            :class="isDark ? 'bg-slate-900/50 border border-white/5 backdrop-blur-xl' : 'bg-white/80 border border-white/50 backdrop-blur-xl shadow-slate-200/50'">
            
-        <div class="relative p-12 overflow-hidden flex flex-col items-center text-center">
+        <div class="relative lg:px-8 px-4 py-8 md:p-12 overflow-hidden flex flex-col items-center text-center">
             
-          <!-- Animated gradient bg -->
           <div class="absolute inset-0 bg-gradient-to-br from-primary via-purple-600 to-pink-600 opacity-90"></div>
           <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150"></div>
           
           <div class="relative z-10 text-white w-full max-w-lg mx-auto">
             <h3 class="text-3xl font-bold mb-6">Contact Info</h3>
-            <p class="mb-10 text-white/80 leading-relaxed text-lg">
+            <p class="mb-10 text-white/80 leading-relaxed text-lg md:text-xl">
               I'm always open to discussing product design work or partnership opportunities. Feel free to reach out through any of the following channels.
             </p>
 
@@ -47,21 +46,21 @@ const { personalInfo } = storeToRefs(store);
                 <div class="p-2 bg-white/20 rounded-full">
                   <Mail class="w-6 h-6" />
                 </div>
-                <span class="font-medium tracking-wide text-lg">{{ personalInfo.email }}</span>
+                <span class="font-medium tracking-wide md:text-lg">{{ personalInfo.email }}</span>
               </a>
 
               <a :href="'tel:' + personalInfo.phone" class="flex items-center justify-center space-x-4 group/item p-4 rounded-2xl bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-[1.02] backdrop-blur-sm shadow-lg border border-white/10">
                 <div class="p-2 bg-white/20 rounded-full">
                   <Phone class="w-6 h-6" />
                 </div>
-                <span class="font-medium tracking-wide text-lg">{{ personalInfo.phone }}</span>
+                <span class="font-medium tracking-wide lg:text-lg">{{ personalInfo.phone }}</span>
               </a>
               
               <div class="flex items-center justify-center space-x-4 p-4 rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm">
                 <div class="p-2 bg-white/10 rounded-full">
                   <MapPin class="w-6 h-6" />
                 </div>
-                <span class="font-medium tracking-wide text-lg">{{ personalInfo.location }}</span>
+                <span class="font-medium tracking-wide lg:text-lg">{{ personalInfo.location }}</span>
               </div>
             </div>
             

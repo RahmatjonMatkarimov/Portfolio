@@ -35,7 +35,7 @@ const { projects } = storeToRefs(store);
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 perspective-1000">
         <div v-for="(project, index) in projects" :key="index"
-             class="group relative rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up border"
+             class="group relative rounded-3xl p-6 md:p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up border"
              :style="{ animationDelay: (index * 0.1 + 0.3) + 's' }"
              :class="isDark ? 'bg-slate-900/40 border-white/5 hover:border-white/10 shadow-black/20 hover:shadow-primary/5 backdrop-blur-md' : 'bg-white/60 border-white/50 shadow-slate-200/50 hover:shadow-primary/10 backdrop-blur-md'">
           

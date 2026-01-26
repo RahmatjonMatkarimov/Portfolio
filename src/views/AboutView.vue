@@ -39,10 +39,10 @@ const { experiences, education } = storeToRefs(store);
             <h3 class="text-2xl font-bold" :class="isDark ? 'text-white' : 'text-slate-900'">Work Experience</h3>
           </div>
           
-          <div class="relative pl-12 border-l-2 space-y-12" :class="isDark ? 'border-slate-800' : 'border-slate-200'">
+          <div class="relative pl-8 md:pl-12 border-l-2 space-y-12" :class="isDark ? 'border-slate-800' : 'border-slate-200'">
             <div v-for="(exp, index) in experiences" :key="index" class="relative group">
 
-              <span class="absolute -left-[61px] top-0 h-6 w-6 rounded-full border-4 transition-all duration-300 group-hover:scale-125 z-10"
+              <span class="absolute -left-[14px] top-0 h-6 w-6 rounded-full border-4 transition-all duration-300 group-hover:scale-125 z-10"
                     :class="isDark ? 'bg-slate-900 border-emerald-500' : 'bg-white border-emerald-500'">
                     <span class="absolute inset-0 rounded-full bg-emerald-500/40 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </span>
@@ -79,10 +79,10 @@ const { experiences, education } = storeToRefs(store);
             <h3 class="text-2xl font-bold" :class="isDark ? 'text-white' : 'text-slate-900'">Education</h3>
           </div>
           
-          <div class="relative pl-12 border-l-2 space-y-12" :class="isDark ? 'border-slate-800' : 'border-slate-200'">
+          <div class="relative pl-8 md:pl-12 border-l-2 space-y-12" :class="isDark ? 'border-slate-800' : 'border-slate-200'">
             <div v-for="(edu, index) in education" :key="index" class="relative group">
 
-               <span class="absolute -left-[61px] top-0 h-6 w-6 rounded-full border-4 transition-all duration-300 group-hover:scale-125 z-10"
+               <span class="absolute -left-[14px] top-0 h-6 w-6 rounded-full border-4 transition-all duration-300 group-hover:scale-125 z-10"
                     :class="isDark ? 'bg-slate-900 border-blue-500' : 'bg-white border-blue-500'">
                     <span class="absolute inset-0 rounded-full bg-blue-500/40 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
                </span>

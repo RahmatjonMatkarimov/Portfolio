@@ -40,7 +40,7 @@ const getIcon = (category: string) => {
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="(items, category, index) in skills" :key="category"
-             class="group relative rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up overflow-hidden"
+             class="group relative rounded-3xl p-6 md:p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up overflow-hidden"
              :style="{ animationDelay: (index * 0.1 + 0.2) + 's' }"
              :class="isDark ? 'bg-slate-900/40 border border-white/5 backdrop-blur-md' : 'bg-white/60 border border-white/50 shadow-lg backdrop-blur-md'">
           

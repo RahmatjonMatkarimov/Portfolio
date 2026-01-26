@@ -65,7 +65,7 @@ onUnmounted(() => {
 
            <div class="absolute -left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-purple-500 to-transparent opacity-0 lg:opacity-30 rounded-full scale-y-0 animate-scale-in origin-top" style="animation-delay: 0.5s"></div>
 
-          <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tight leading-[1.1] animate-fade-in-up transform-gpu" style="animation-delay: 0.1s">
+          <h1 class="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tight leading-[1.1] animate-fade-in-up transform-gpu" style="animation-delay: 0.1s">
             <span class="block text-slate-900 dark:text-white drop-shadow-sm">Building</span>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-500 to-pink-500 animate-text-shimmer bg-[length:200%_auto]">Digital Future</span>
           </h1>
