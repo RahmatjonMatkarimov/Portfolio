@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import { Sun, Moon, Menu, X } from 'lucide-vue-next';
+import { Sun, Moon } from 'lucide-vue-next';
 import { useRoute } from 'vue-router';
 
 defineProps<{ isDark: boolean }>();
