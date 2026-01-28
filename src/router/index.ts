@@ -68,7 +68,7 @@ const router = createRouter({
   },
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   const title = to.meta.title as string;
   const description = to.meta.description as string;
 
@@ -82,7 +82,6 @@ router.beforeEach((to, from, next) => {
       metaDescription.setAttribute("content", description);
     }
 
-    // Also update OG tags for better sharing
     const ogTitle = document.querySelector('meta[property="og:title"]');
     const ogDescription = document.querySelector(
       'meta[property="og:description"]',
