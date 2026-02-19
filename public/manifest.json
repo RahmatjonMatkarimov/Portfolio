@@ -1,0 +1,16 @@
+{
+    "name": "Rahmatjon Matkarimov Portfolio",
+    "short_name": "RM Portfolio",
+    "description": "Portfolio of Rahmatjon Matkarimov - Backend Developer",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#020617",
+    "theme_color": "#020617",
+    "icons": [
+        {
+            "src": "/vite.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

@@ -71,10 +71,20 @@ const router = createRouter({
 router.beforeEach((to, _from, next) => {
   const title = to.meta.title as string;
   const description = to.meta.description as string;
+  const baseUrl = "https://www.rahmatjonmatkarimov.uz";
+  const fullUrl = baseUrl + to.path;
 
   if (title) {
     document.title = title;
   }
+
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    document.head.appendChild(canonical);
+  }
+  canonical.setAttribute("href", fullUrl);
 
   if (description) {
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -86,9 +96,11 @@ router.beforeEach((to, _from, next) => {
     const ogDescription = document.querySelector(
       'meta[property="og:description"]',
     );
+    const ogUrl = document.querySelector('meta[property="og:url"]');
 
     if (ogTitle && title) ogTitle.setAttribute("content", title);
     if (ogDescription) ogDescription.setAttribute("content", description);
+    if (ogUrl) ogUrl.setAttribute("content", fullUrl);
   }
 
   next();
