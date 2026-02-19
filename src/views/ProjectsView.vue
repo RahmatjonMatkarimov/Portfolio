@@ -23,6 +23,7 @@ const { projects } = storeToRefs(store);
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center mb-16 max-w-2xl mx-auto">
          <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4 animate-fade-in-up">Portfolio</span>
+         <h1 class="sr-only">Rahmatjon Matkarimov's Portfolio - Backend & Web Projects</h1>
          <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight animate-fade-in-up" style="animation-delay: 0.1s"
              :class="isDark ? 'text-white' : 'text-slate-900'">
            Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">Works</span>

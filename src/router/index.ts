@@ -93,14 +93,16 @@ router.beforeEach((to, _from, next) => {
     }
 
     const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDescription = document.querySelector(
-      'meta[property="og:description"]',
-    );
+    const ogDescription = document.querySelector('meta[property="og:description"]');
     const ogUrl = document.querySelector('meta[property="og:url"]');
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
 
     if (ogTitle && title) ogTitle.setAttribute("content", title);
     if (ogDescription) ogDescription.setAttribute("content", description);
     if (ogUrl) ogUrl.setAttribute("content", fullUrl);
+    if (twitterTitle && title) twitterTitle.setAttribute("content", title);
+    if (twitterDescription) twitterDescription.setAttribute("content", description);
   }
 
   next();
