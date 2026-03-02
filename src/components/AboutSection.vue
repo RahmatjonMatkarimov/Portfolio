@@ -25,7 +25,7 @@ const { experiences, education, t, currentLanguage } = storeToRefs(store);
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center lg:text-left mb-10 md:mb-16 max-w-4xl mx-auto lg:mx-0">
         <div
-          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-5 animate-fade-in-up">
+          class="lg:inline-flex hidden items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-5 animate-fade-in-up">
           <span class="text-[10px] font-black tracking-widest uppercase">{{ t.about.badge }}</span>
         </div>
         <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-5 tracking-tight animate-fade-in-up"

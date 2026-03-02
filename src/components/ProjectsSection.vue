@@ -32,7 +32,7 @@ const getGradient = (index: number) => {
         class="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-16 gap-6 text-center md:text-left">
         <div class="max-w-3xl">
           <div
-            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-5 animate-fade-in-up">
+            class="lg:inline-flex hidden items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-5 animate-fade-in-up">
             <span class="text-[10px] font-black tracking-widest uppercase">{{ t.projects.badge }}</span>
           </div>
           <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight animate-fade-in-up"
