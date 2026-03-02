@@ -155,7 +155,7 @@ onUnmounted(() => {
 
 
         <div
-          class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-primary/10 rounded-full blur-[80px] pointer-events-none animate-blob">
+          class="absolute bottom-[-10%] left-[-10%] w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-primary/10 rounded-full blur-[60px] md:blur-[80px] pointer-events-none animate-blob will-change-transform">
         </div>
 
         <div

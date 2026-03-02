@@ -20,18 +20,20 @@
 @layer utilities {
   .glass {
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    @apply sm:backdrop-blur-[40px] transition-all duration-300;
   }
 
   .glass-dark {
     background: rgba(2, 6, 23, 0.4);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    @apply sm:backdrop-blur-[40px] transition-all duration-300;
   }
 
   .text-gradient {
@@ -39,11 +41,11 @@
   }
 
   .card-hover {
-    @apply transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl;
+    @apply transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl will-change-transform;
   }
 
   .neo-blur {
-    @apply backdrop-blur-3xl bg-white/5 border border-white/10;
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 sm:backdrop-blur-3xl;
   }
 }
 

@@ -22,9 +22,8 @@ const handleSubmit = async () => {
 
   isSubmitting.value = true;
 
-  // Telegram Bot integration
-  const BOT_TOKEN = '8684981563:AAH6CzhfgkhURcL7egYmNUxlaO6U-LzaAiQ'; // Replace with your actual bot token
-  const CHAT_ID = '8001371987'; // Replace with your actual chat ID
+  const BOT_TOKEN = '8684981563:AAH6CzhfgkhURcL7egYmNUxlaO6U-LzaAiQ';
+  const CHAT_ID = '8001371987';
   const text = `📬 New Contact Form Submission:\n\n👤 Name: ${form.value.name}\n📞 Phone: ${form.value.phone}\n💬 Message: ${form.value.message}`;
 
   try {
