@@ -181,17 +181,17 @@ export const usePortfolioStore = defineStore("portfolio", () => {
 
   const personalInfo = ref({
     name: "Rahmatjon Matkarimov",
-    role: "Backend Developer",
+    role: "Full Stack Developer",
     location: "Xorazm, Uzbekistan",
     email: "rahmatjon974@gmail.com",
     phone: "+998 (33) 990 98 83",
     bio: {
-      en: "Graduating from Najot Ta'lim in Backend web programming solidified my foundation in software engineering. This educational journey, paired with hands-on experience in backend development, motivates me to build impactful, well-integrated systems that solve complex challenges.",
-      uz: "Najot Ta'limda Backend web dasturlash yo'nalishini tugatishim dasturiy ta'minot muhandisligi bo'yicha poydevorimni mustahkamladi. Ushbu ta'lim yo'li, backend ishlab chiqishdagi amaliy tajriba bilan birgalikda, meni murakkab muammolarni hal qiladigan ta'sirli, yaxshi integratsiyalangan tizimlarni qurishga undaydi.",
+      en: "Graduating from Najot Ta'lim in Backend programming and IT Park in Frontend development solidified my foundation in Full Stack engineering. This combined expertise allows me to build robust, scalable, and user-centric digital solutions from start to finish.",
+      uz: "Najot Ta'limda Backend va IT Parkda Frontend yo'nalishlarini tamomlash Full Stack muhandisligi bo'yicha poydevorimni mustahkamladi. Ushbu birlashgan tajriba menga boshidan oxirigacha mustahkam, kengayuvchan va foydalanuvchiga yo'naltirilgan raqamli yechimlarni yaratish imkonini beradi.",
     },
     shortBio: {
-      en: "Backend Developer specializing in NestJS, Node.js, and Microservices architecture.",
-      uz: "NestJS, Node.js va Mikroxizmatlar arxitekturasiga ixtisoslashgan Backend dasturchi.",
+      en: "Full Stack Developer specializing in NestJS, Node.js, and Vue.js ecosystem.",
+      uz: "NestJS, Node.js va Vue.js ekotizimiga ixtisoslashgan Full Stack dasturchi.",
     },
   });
 
