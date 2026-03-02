@@ -101,16 +101,19 @@ section {
     animation-delay: 0s !important;
   }
 
-  .glass,
-  .glass-dark,
-  .neo-blur {
+  .glass {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     background: rgba(255, 255, 255, 0.95) !important;
   }
 
+  .dark .glass,
+  .glass-dark,
   .dark .glass-dark,
+  .neo-blur,
   .dark .neo-blur {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     background: rgba(15, 23, 42, 0.95) !important;
   }
 }
