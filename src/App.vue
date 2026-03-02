@@ -25,7 +25,9 @@ onMounted(() => {
     <Navbar :is-dark="isDark" />
 
     <main>
-      <router-view :is-dark="isDark" />
+      <router-view v-slot="{ Component }">
+        <component :is="Component" :is-dark="isDark" />
+      </router-view>
     </main>
 
     <footer class="py-12 text-center text-sm relative z-10 transition-colors duration-500">

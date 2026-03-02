@@ -10,6 +10,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         home: "Home",
         about: "About",
         projects: "Projects",
+        services: "Services",
         skills: "Skills",
         contact: "Contact",
         talk: "LET'S TALK",
@@ -62,6 +63,28 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         callMe: "Call Me",
         formTitle: "Send a message",
       },
+      services: {
+        badge: "What I Offer",
+        title1: "My",
+        title2: "Services",
+        subtitle: "I help businesses grow by creating reliable, efficient, and user-friendly digital solutions.",
+        webDev: {
+          title: "Web Development",
+          desc: "Creating modern, fast, and high-quality websites and admin panels tailored to your business needs.",
+        },
+        telegramBots: {
+          title: "Telegram Bots",
+          desc: "Smart bots to automate your sales, customer support, and daily business tasks directly inside Telegram.",
+        },
+        backend: {
+          title: "Backend & APIs",
+          desc: "Building the powerful 'brain' that manages your data and connects different systems together securely.",
+        },
+        systems: {
+          title: "Business Systems",
+          desc: "Custom CRM and management systems to organize your work, track sales, and improve productivity.",
+        },
+      },
       footer: {
         tagline: "Designing digital experiences for all screens.",
         crafted: "Crafted with precision.",
@@ -72,6 +95,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         home: "Asosiy",
         about: "Men haqimda",
         projects: "Loyihalar",
+        services: "Xizmatlar",
         skills: "Ko'nikmalar",
         contact: "Aloqa",
         talk: "BOG'LANISH",
@@ -123,6 +147,28 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         emailMe: "Email orqali",
         callMe: "Telefon orqali",
         formTitle: "Xabar yuborish",
+      },
+      services: {
+        badge: "Xizmatlar",
+        title1: "Men ko'rsatadigan",
+        title2: "Xizmatlar",
+        subtitle: "Sizning biznesingizni rivojlantirish uchun ishonchli, samarali va foydalanishga qulay raqamli yechimlarni taklif qilaman.",
+        webDev: {
+          title: "Veb-saytlar yaratish",
+          desc: "Biznesingiz uchun zamonaviy, tez ishlaydigan va sifatli veb-saytlar hamda boshqaruv panellarini tayyorlab beraman.",
+        },
+        telegramBots: {
+          title: "Telegram Botlar",
+          desc: "Savdoni avtomatlashtirish, mijozlar bilan muloqot va kundalik ishlarni yengillashtirish uchun aqlli botlar yarataman.",
+        },
+        backend: {
+          title: "Backend va API'lar",
+          desc: "Ma'lumotlaringizni xavfsiz saqlaydigan va tizimlaringizni bir-biriga bog'laydigan kuchli 'miya' (bazalar) quraman.",
+        },
+        systems: {
+          title: "Biznes Tizimlari",
+          desc: "Ishingizni tartibga solish, mijozlarni kuzatish va foydani oshirish uchun maxsus CRM va boshqaruv tizimlari.",
+        },
       },
       footer: {
         tagline: "Barcha ekranlar uchun raqamli tajribalarni loyihalashtirish.",

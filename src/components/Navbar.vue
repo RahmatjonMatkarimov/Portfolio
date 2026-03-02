@@ -19,6 +19,7 @@ const navLinks = computed(() => [
   { name: t.value.nav.home, path: '/' },
   { name: t.value.nav.about, path: '/about' },
   { name: t.value.nav.projects, path: '/projects' },
+  { name: t.value.nav.services, path: '/services' },
   { name: t.value.nav.skills, path: '/skills' },
   { name: t.value.nav.contact, path: '/contact' },
 ]);

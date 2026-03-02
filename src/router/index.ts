@@ -4,6 +4,7 @@ import AboutView from "../views/AboutView.vue";
 import ProjectsView from "../views/ProjectsView.vue";
 import ContactView from "../views/ContactView.vue";
 import SkillsView from "../views/SkillsView.vue";
+import ServicesView from "../views/ServicesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,6 +37,16 @@ const router = createRouter({
         title: "Projects | Rahmatjon Matkarimov",
         description:
           "Explore the backend development projects and software solutions built by Rahmatjon Matkarimov.",
+      },
+    },
+    {
+      path: "/services",
+      name: "services",
+      component: ServicesView,
+      meta: {
+        title: "Services | Rahmatjon Matkarimov",
+        description:
+          "Professional backend development services, Telegram bots, and business system solutions by Rahmatjon Matkarimov.",
       },
     },
     {

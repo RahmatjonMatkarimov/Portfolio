@@ -47,6 +47,26 @@
   .neo-blur {
     @apply backdrop-blur-xl bg-white/5 border border-white/10 sm:backdrop-blur-3xl;
   }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .animation-delay-5000 {
+    animation-delay: 5s;
+  }
 }
 
 ::-webkit-scrollbar {

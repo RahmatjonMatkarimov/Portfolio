@@ -5,6 +5,7 @@ import { ArrowRight, Mail, Code2, Cpu } from 'lucide-vue-next';
 import { ref, onMounted, onUnmounted } from 'vue';
 import AboutSection from '../components/AboutSection.vue';
 import ProjectsSection from '../components/ProjectsSection.vue';
+import ServicesSection from '../components/ServicesSection.vue';
 import SkillsSection from '../components/SkillsSection.vue';
 import ContactSection from '../components/ContactSection.vue';
 
@@ -136,6 +137,7 @@ onUnmounted(() => {
     <!-- Content Sections -->
     <AboutSection :is-dark="isDark" />
     <ProjectsSection :is-dark="isDark" :limit="3" />
+    <ServicesSection :is-dark="isDark" />
     <SkillsSection :is-dark="isDark" />
     <ContactSection :is-dark="isDark" />
   </div>
