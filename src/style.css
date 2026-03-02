@@ -5,31 +5,50 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply text-[13px] sm:text-[14px] md:text-[15px] xl:text-[15px];
+  }
+
   body {
-    @apply antialiased text-slate-800 dark:text-slate-100 dark:bg-[#020617];
+    @apply antialiased text-slate-800 dark:text-slate-100 dark:bg-[#020617] leading-relaxed;
+    font-feature-settings: "cv02", "cv05", "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-lg;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
   }
+
   .glass-dark {
-    @apply bg-[#0f172a]/70 backdrop-blur-xl border border-white/5 shadow-2xl;
+    background: rgba(2, 6, 23, 0.4);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-rose-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600;
   }
-  
+
   .card-hover {
-    @apply transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1;
+    @apply transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .neo-blur {
+    @apply backdrop-blur-3xl bg-white/5 border border-white/10;
   }
 }
 
-
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,18 +56,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 dark:bg-slate-700 rounded-full border-4 border-transparent bg-clip-content;
+  @apply bg-slate-300 dark:bg-slate-800/50 rounded-full border-2 border-transparent bg-clip-content;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-400 dark:bg-slate-600;
-}
-
 
 ::selection {
   @apply bg-primary/30 text-primary;
 }
-
 
 .grain-overlay {
   position: fixed;
@@ -57,11 +70,20 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 50;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 100;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
 }
