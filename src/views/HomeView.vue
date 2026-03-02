@@ -134,9 +134,8 @@ onUnmounted(() => {
       </div>
     </section>
 
-    <!-- Content Sections -->
     <AboutSection :is-dark="isDark" />
-    <ProjectsSection :is-dark="isDark" :limit="3" />
+    <ProjectsSection :is-dark="isDark" :limit="4" />
     <ServicesSection :is-dark="isDark" />
     <SkillsSection :is-dark="isDark" />
     <ContactSection :is-dark="isDark" />

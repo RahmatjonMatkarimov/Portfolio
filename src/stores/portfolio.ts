@@ -249,6 +249,126 @@ export const usePortfolioStore = defineStore("portfolio", () => {
   const projects = ref([
     {
       title: {
+        en: "Shop Automation System",
+        uz: "Do'kon avtomatlashtirish tizimi",
+      },
+      description: {
+        en: "A robust retail management ecosystem with a NestJS/Prisma backend, Vue 3 dashboard featuring real-time analytics, and an Expo mobile app for barcode-driven operations.",
+        uz: "NestJS va Prisma backend, real-vaqt tahlillariga ega Vue 3 paneli va shtrix-kodlar bilan ishlaydigan Expo mobil ilovasidan iborat do'kon boshqaruv tizimi.",
+      },
+      tags: ["NestJS", "Vue 3", "React Native", "PostgreSQL", "Prisma"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov",
+        demo: null,
+      },
+      features: {
+        en: [
+          "Real-time POS & Inventory tracking",
+          "Barcode scanner integration (Mobile & Web)",
+          "Monthly/Yearly sales analytics with charts",
+          "Low-stock alerts & best-seller reports",
+          "Secure multi-role JWT authentication",
+        ],
+        uz: [
+          "To'liq kassa va ombor boshqaruv tizimi",
+          "Shtrix-kod skaneri (mobil va veb uchun)",
+          "Oylik va yillik savdo statistikasi va hisobotlar",
+          "Kam qolgan va ko'p sotilgan mahsulotlar tahlili",
+          "Barcha qurilmalarda ma'lumotlarning real-vaqtdagi sinxronizatsiyasi",
+        ],
+      },
+    },
+    {
+      title: {
+        en: "Murodbek Matkarimov - SMM Portfolio",
+        uz: "Murodbek Matkarimov - SMM Portfolio",
+      },
+      description: {
+        en: "A premium vCard for an SMM & Digital Marketing specialist. Developed using Vue 3 and the latest Tailwind CSS v4 for peak performance.",
+        uz: "SMM va Digital Marketing mutaxassisi uchun premium vizitka sayti. Vue 3 va eng so'nggi Tailwind CSS v4 texnologiyasi asosida yuqori tezlik bilan yaratilgan.",
+      },
+      tags: ["Vue 3", "Tailwind CSS v4", "SEO", "Vite"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov",
+        demo: "https://murodbek-matkarimov.rahmatjonmatkarimov.uz/",
+      },
+      features: {
+        en: [
+          "Specialized SMM Service Catalog",
+          "Tailwind v4 high-speed UI transitions",
+          "Direct Instagram & Telegram business API",
+          "SEO-ready semantic HTML structure",
+        ],
+        uz: [
+          "Sohaga oid maxsus SMM xizmatlar katalogi",
+          "Tailwind v4 asosidagi yuqori tezlikdagi animatsiyalar",
+          "Instagram va Telegram orqali to'g'ridan-to'g'ri bog'lanish",
+          "SEO uchun optimallashgan semantik tuzilish",
+        ],
+      },
+    },
+    {
+      title: {
+        en: "Boburjon Bobojonov - Trading Portfolio",
+        uz: "Boburjon Bobojonov - Trading Portfolio",
+      },
+      description: {
+        en: "An elegant, gold-themed trading portfolio optimized for personal branding. Features a custom CSS stagger animation system.",
+        uz: "Shaxsiy brending uchun mo'ljallangan, oltin rangli va lyuks uslubdagi trading portfoliosi. Maxsus CSS kaskadli animatsiya tizimi bilan boyitilgan.",
+      },
+      tags: ["Vue 3", "Tailwind CSS v3", "Glassmorphism", "SEO"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov",
+        demo: "https://boburjon-bobojonov.rahmatjonmatkarimov.uz/",
+      },
+      features: {
+        en: [
+          "Luxury Gold-accented visual identity",
+          "Staggered entrance animations",
+          "One-page 'vCard' style layout",
+          "Optimized for fast mobile loading",
+        ],
+        uz: [
+          "Oltin rangli lyuks vizual imidj",
+          "Kaskadli kirish animatsiyalari",
+          "Bir sahifali 'visitka' uslubidagi dizayn",
+          "Mobil qurilmalarda tez yuklanish uchun optimallashgan",
+        ],
+      },
+    },
+    {
+      title: {
+        en: "Muhammadjon Xusainboyev - Portfolio",
+        uz: "Muhammadjon Xusainboyev - Portfolio",
+      },
+      description: {
+        en: "An interactive trading portfolio and professional vCard. Built with Vue 3 and GSAP for high-end scroll animations and a seamless dark/light mode experience.",
+        uz: "Moliya bozori tahlilchisi va treder uchun interaktiv 'visitka' (vCard) sayti. Vue 3 va GSAP yordamida yuqori sifatli animatsiyalar va qulay dark/light mode tizimi bilan yaratilgan.",
+      },
+      tags: ["Vue 3", "GSAP", "Tailwind CSS", "ScrollTrigger"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov",
+        demo: "https://xusainboyevmuhammadjon.rahmatjonmatkarimov.uz/",
+      },
+      features: {
+        en: [
+          "Interactive GSAP Timeline animations",
+          "ScrollTrigger-based reveal effects",
+          "Dynamic Theme Switcher (Dark/Light)",
+          "Glassmorphism UI elements",
+          "One-click social & contact integration",
+        ],
+        uz: [
+          "Interaktiv GSAP Timeline animatsiyalari",
+          "ScrollTrigger asosidagi animatsion effektlar",
+          "Dinamik mavzu almashtirgich (Dark/Light)",
+          "Glassmorphism uslubidagi UI elementlar",
+          "Ijtimoiy tarmoqlar va aloqa integratsiyasi",
+        ],
+      },
+    },
+    {
+      title: {
         en: "Authentication System",
         uz: "Autentifikatsiya tizimi",
       },
@@ -261,13 +381,22 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         github: "https://github.com/RahmatjonMatkarimov/auth",
         demo: null,
       },
-      features: [
-        "JWT authentication (access & refresh tokens)",
-        "Password hashing with bcrypt",
-        "Role-protected endpoints",
-        "User CRUD operations",
-        "Swagger API documentation",
-      ],
+      features: {
+        en: [
+          "JWT authentication (access & refresh tokens)",
+          "Password hashing with bcrypt",
+          "Role-protected endpoints",
+          "User CRUD operations",
+          "Swagger API documentation",
+        ],
+        uz: [
+          "JWT autentifikatsiyasi (access va refresh token)",
+          "bcrypt bilan parollarni xesh-lash",
+          "Rollar bilan himoyalangan yo'llar",
+          "Foydalanuvchi CRUD operatsiyalari",
+          "Swagger API hujjatlari",
+        ],
+      },
     },
   ]);
 

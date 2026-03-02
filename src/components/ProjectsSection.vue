@@ -85,10 +85,21 @@ const getGradient = (index: number) => {
               {{ project.title[currentLanguage] }}
             </h3>
 
-            <p class="mb-5 md:mb-8 text-sm md:text-base font-light leading-relaxed opacity-80"
+            <p class="mb-5 md:mb-6 text-sm md:text-base font-light leading-relaxed opacity-80"
               :class="isDark ? 'text-slate-400' : 'text-slate-600'">
               {{ project.description[currentLanguage] }}
             </p>
+
+            <ul class="space-y-2 md:space-y-3 mb-8">
+                <li v-for="(feature, fIndex) in project.features[currentLanguage]" :key="fIndex" 
+                    class="flex items-center gap-2.5 text-[11px] md:text-sm font-light opacity-70"
+                    :class="isDark ? 'text-slate-300' : 'text-slate-600'">
+                    <div class="p-0.5 rounded-full bg-primary/20 text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 md:w-3.5 md:h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    {{ feature }}
+                </li>
+            </ul>
           </div>
 
           <div class="relative z-10 flex flex-wrap gap-2 mt-auto">
