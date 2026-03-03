@@ -190,8 +190,8 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       uz: "Najot Ta'limda Backend va IT Parkda Frontend yo'nalishlarini tamomlash Full Stack muhandisligi bo'yicha poydevorimni mustahkamladi. Ushbu birlashgan tajriba menga boshidan oxirigacha mustahkam, kengayuvchan va foydalanuvchiga yo'naltirilgan raqamli yechimlarni yaratish imkonini beradi.",
     },
     shortBio: {
-      en: "Full Stack Developer specializing in NestJS, Node.js, and Vue.js ecosystem.",
-      uz: "NestJS, Node.js va Vue.js ekotizimiga ixtisoslashgan Full Stack dasturchi.",
+      en: "Rahmatjon Web - Full Stack Developer specializing in NestJS, Node.js, and Vue.js ecosystem.",
+      uz: "Rahmatjon Web - NestJS, Node.js va Vue.js ekotizimiga ixtisoslashgan Full Stack dasturchi.",
     },
   });
 

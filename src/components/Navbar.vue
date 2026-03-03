@@ -74,7 +74,8 @@ onUnmounted(() => {
           : ''
       ]">
 
-      <router-link to="/" class="group flex items-center gap-3 z-[110] relative" @click="closeMenu">
+      <router-link to="/" class="group flex items-center gap-3 z-[110] relative" @click="closeMenu"
+        aria-label="Rahmatjon Web - Home">
         <span class="text-xl md:text-2xl font-black tracking-tighter text-white">RM<span
             class="text-primary">.</span></span>
       </router-link>

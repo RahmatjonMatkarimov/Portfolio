@@ -1,7 +1,7 @@
 {
-    "name": "Rahmatjon Matkarimov Portfolio",
-    "short_name": "RM Portfolio",
-    "description": "Portfolio of Rahmatjon Matkarimov - Backend Developer",
+    "name": "Rahmatjon Web Portfolio",
+    "short_name": "Rahmatjon Web",
+    "description": "Portfolio of Rahmatjon Web (Rahmatjon Matkarimov) - Full Stack Developer",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#020617",
