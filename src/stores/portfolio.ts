@@ -249,6 +249,35 @@ export const usePortfolioStore = defineStore("portfolio", () => {
   const projects = ref([
     {
       title: {
+        en: "OsonQR - Free QR Code Generator",
+        uz: "OsonQR - Bepul QR Kod Generatori",
+      },
+      description: {
+        en: "A comprehensive and free QR Code generator tool. Easily create stylized QR codes for URLs, WiFi, SMS, vCard, social media, and more.",
+        uz: "URL, WiFi, SMS, vCard, ijtimoiy tarmoqlar va boshqalar uchun bepul va qulay QR kod yaratish vositasi.",
+      },
+      tags: ["Vue 3", "Tailwind CSS v4", "QR Code", "Vite"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov",
+        demo: "https://osonqr.rahmatjonmatkarimov.uz/",
+      },
+      features: {
+        en: [
+          "Multiple QR types (URL, WiFi, vCard, SMS, etc.)",
+          "Custom visual styling & logo injection",
+          "Tailwind v4 high-speed UI transitions",
+          "Multilingual support (i18n)",
+        ],
+        uz: [
+          "Turli xil QR turlari (URL, WiFi, vCard, SMS va hokazo)",
+          "Maxsus vizual dizayn qism va logotip qoshish",
+          "Tailwind v4 tezkor interfeysi",
+          "Ko'p tilli interfeys (i18n)",
+        ],
+      },
+    },
+    {
+      title: {
         en: "Shop Automation System",
         uz: "Do'kon avtomatlashtirish tizimi",
       },
