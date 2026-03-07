@@ -14,9 +14,9 @@ const router = createRouter({
       name: "home",
       component: HomeView,
       meta: {
-        title: "Rahmatjon Matkarimov | Backend Developer",
+        title: "Rahmatjon Matkarimov - Full Stack Developer",
         description:
-          "Portfolio of Rahmatjon Matkarimov - Backend Developer specializing in NestJS, Node.js, and Microservices architecture. Based in Xorazm, Uzbekistan.",
+          "Portfolio of Rahmatjon Matkarimov - Full Stack Developer specializing in NestJS, Node.js, Vue.js and Microservices architecture. Based in Xorazm, Uzbekistan.",
       },
     },
     {
@@ -26,7 +26,7 @@ const router = createRouter({
       meta: {
         title: "About Me | Rahmatjon Matkarimov",
         description:
-          "Learn more about Rahmatjon Matkarimov, a backend developer from Uzbekistan with a passion for building scalable systems.",
+          "Learn more about Rahmatjon Matkarimov, a Full Stack developer from Uzbekistan with a passion for building scalable systems.",
       },
     },
     {
@@ -36,7 +36,7 @@ const router = createRouter({
       meta: {
         title: "Projects | Rahmatjon Matkarimov",
         description:
-          "Explore the backend development projects and software solutions built by Rahmatjon Matkarimov.",
+          "Explore the Full Stack development projects and software solutions built by Rahmatjon Matkarimov.",
       },
     },
     {
@@ -46,7 +46,7 @@ const router = createRouter({
       meta: {
         title: "Services | Rahmatjon Matkarimov",
         description:
-          "Professional backend development services, Telegram bots, and business system solutions by Rahmatjon Matkarimov.",
+          "Professional Full Stack development services, Telegram bots, and business system solutions by Rahmatjon Matkarimov.",
       },
     },
     {
@@ -56,7 +56,7 @@ const router = createRouter({
       meta: {
         title: "Skills | Rahmatjon Matkarimov",
         description:
-          "Technical skills and technologies mastered by Rahmatjon Matkarimov, including NestJS, Node.js, TypeScript, and database management.",
+          "Technical skills and technologies mastered by Rahmatjon Matkarimov, including NestJS, Node.js, Vue.js, TypeScript, and database management.",
       },
     },
     {
@@ -66,7 +66,7 @@ const router = createRouter({
       meta: {
         title: "Contact | Rahmatjon Matkarimov",
         description:
-          "Get in touch with Rahmatjon Matkarimov to discuss backend development opportunities and collaborations.",
+          "Get in touch with Rahmatjon Matkarimov to discuss Full Stack development opportunities and collaborations.",
       },
     },
   ],
