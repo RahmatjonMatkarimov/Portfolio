@@ -17,6 +17,19 @@ const form = ref({
 const isSubmitting = ref(false);
 const showSuccess = ref(false);
 
+const getDeviceInfo = () => {
+  const ua = navigator.userAgent;
+  const isMobile = /Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+  const isTablet = /iPad|Android(?!.*Mobile)/i.test(ua);
+  const os = /Windows/i.test(ua) ? 'Windows' :
+    /Mac OS X/i.test(ua) && !isMobile && !isTablet ? 'macOS' :
+      /Linux/i.test(ua) && !isMobile ? 'Linux' :
+        /Android/i.test(ua) ? 'Android' :
+          /iPhone|iPad|iPod/i.test(ua) ? 'iOS' : 'Noma\'lum OS';
+  const deviceType = isTablet ? '📟 Planshet' : isMobile ? '📱 Telefon' : '💻 Kompyuter (PC)';
+  return `${deviceType} | ${os}`;
+};
+
 const handleSubmit = async () => {
   if (!form.value.name || !form.value.phone || !form.value.message) return;
 
@@ -24,7 +37,8 @@ const handleSubmit = async () => {
 
   const BOT_TOKEN = '8684981563:AAH6CzhfgkhURcL7egYmNUxlaO6U-LzaAiQ';
   const CHAT_ID = '8001371987';
-  const text = `📬 New Contact Form Submission:\n\n👤 Name: ${form.value.name}\n📞 Phone: ${form.value.phone}\n💬 Message: ${form.value.message}`;
+  const deviceInfo = getDeviceInfo();
+  const text = `📬 Yangi Murojaat:\n\n👤 Ism: ${form.value.name}\n📞 Telefon: ${form.value.phone}\n💬 Xabar: ${form.value.message}\n\n🖥️ Qurilma: ${deviceInfo}`;
 
   try {
     const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -162,27 +176,30 @@ const handleSubmit = async () => {
               <div class="group/input relative">
                 <input v-model="form.name" type="text" required
                   class="w-full bg-transparent border-b-2 border-slate-200 dark:border-white/10 py-2.5 md:py-4 text-base md:text-xl font-bold outline-none transition-all focus:border-cyan-500 peer"
-                  placeholder=" " id="name">
+                  id="name">
                 <label for="name"
-                  class="absolute left-0 top-2.5 md:top-4 text-sm md:text-lg font-bold opacity-30 transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-cyan-500 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] md:peer-not-placeholder-shown:text-xs">{{
+                  :class="form.name ? '-top-4 text-[10px] md:text-xs text-cyan-500 opacity-100' : 'top-2.5 md:top-4 text-sm md:text-lg opacity-30'"
+                  class="absolute left-0 font-bold transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-cyan-500 peer-focus:opacity-100">{{
                     t.contact.formName }}</label>
               </div>
 
               <div class="group/input relative">
                 <input v-model="form.phone" type="tel" required
-                  class="w-full bg-transparent border-b-2 border-slate-200 dark:border-white/10 py-2.5 md:py-4 text-base md:text-xl font-bold outline-none transition-all focus:border-purple-500 peer"
-                  placeholder=" " id="phone">
+                  class="w-full bg-transparent border-b-2 border-slate-200 dark:border-white/10 py-2.5 md:py-4 text-base md:text-xl font-bold outline-none transition-all focus:border-cyan-500 peer"
+                  id="phone">
                 <label for="phone"
-                  class="absolute left-0 top-2.5 md:top-4 text-sm md:text-lg font-bold opacity-30 transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-purple-500 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] md:peer-not-placeholder-shown:text-xs">{{
+                  :class="form.phone ? '-top-4 text-[10px] md:text-xs text-cyan-500 opacity-100' : 'top-2.5 md:top-4 text-sm md:text-lg opacity-30'"
+                  class="absolute left-0 font-bold transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-cyan-500 peer-focus:opacity-100">{{
                     t.contact.formPhone }}</label>
               </div>
 
               <div class="group/input relative">
-                <textarea v-model="form.message" required rows="2 md:4"
+                <textarea v-model="form.message" required rows="3"
                   class="w-full bg-transparent border-b-2 border-slate-200 dark:border-white/10 py-2.5 md:py-4 text-base md:text-xl font-bold outline-none transition-all focus:border-cyan-500 peer resize-none"
-                  placeholder=" " id="message"></textarea>
+                  id="message"></textarea>
                 <label for="message"
-                  class="absolute left-0 top-2.5 md:top-4 text-sm md:text-lg font-bold opacity-30 transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-cyan-500 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] md:peer-not-placeholder-shown:text-xs">{{
+                  :class="form.message ? '-top-4 text-[10px] md:text-xs text-cyan-500 opacity-100' : 'top-2.5 md:top-4 text-sm md:text-lg opacity-30'"
+                  class="absolute left-0 font-bold transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-cyan-500 peer-focus:opacity-100">{{
                     t.contact.formMessage }}</label>
               </div>
             </div>
