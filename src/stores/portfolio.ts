@@ -258,7 +258,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       tags: ["Vue 3", "Tailwind CSS v4", "QR Code", "Vite"],
       links: {
-        github: "https://github.com/RahmatjonMatkarimov",
+        github: "https://github.com/RahmatjonMatkarimov/osonQR",
         demo: "https://osonqr.rahmatjonmatkarimov.uz/",
       },
       features: {
@@ -287,7 +287,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       tags: ["NestJS", "Vue 3", "React Native", "PostgreSQL", "Prisma"],
       links: {
-        github: "https://github.com/RahmatjonMatkarimov",
+        github: null,
         demo: null,
       },
       features: {
@@ -318,7 +318,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       tags: ["Vue 3", "Tailwind CSS v4", "SEO", "Vite"],
       links: {
-        github: "https://github.com/RahmatjonMatkarimov",
+        github: "https://github.com/RahmatjonMatkarimov/murodbek-matkarimov",
         demo: "https://murodbek-matkarimov.rahmatjonmatkarimov.uz/",
       },
       features: {
@@ -347,7 +347,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       tags: ["Vue 3", "Tailwind CSS v3", "Glassmorphism", "SEO"],
       links: {
-        github: "https://github.com/RahmatjonMatkarimov",
+        github: "https://github.com/RahmatjonMatkarimov/boburjon-bobojonov",
         demo: "https://boburjon-bobojonov.rahmatjonmatkarimov.uz/",
       },
       features: {
@@ -376,7 +376,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       tags: ["Vue 3", "GSAP", "Tailwind CSS", "ScrollTrigger"],
       links: {
-        github: "https://github.com/RahmatjonMatkarimov",
+        github: "https://github.com/RahmatjonMatkarimov/X.M_Portfolio",
         demo: "https://xusainboyevmuhammadjon.rahmatjonmatkarimov.uz/",
       },
       features: {
@@ -424,6 +424,89 @@ export const usePortfolioStore = defineStore("portfolio", () => {
           "Rollar bilan himoyalangan yo'llar",
           "Foydalanuvchi CRUD operatsiyalari",
           "Swagger API hujjatlari",
+        ],
+      },
+    },
+        {
+      title: {
+        en: "Khiva-Soft",
+        uz: "Khiva-Soft",
+      },
+      description: {
+        en: "A modern corporate website built with Vue.js and fully styled with Tailwind CSS, utilizing Vue Router for smooth SPA navigation.",
+        uz: "Vue.js yordamida qurilgan, to'liq Tailwind CSS bilan bezatilgan va qulay SPA navigatsiyasi uchun Vue Router dan foydalanilgan zamonaviy korporativ veb-sayt.",
+      },
+      tags: ["Vue 3", "Tailwind CSS", "Vue Router", "Vite"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov/Khiva-Soft",
+        demo: 'https://khiva-soft.rahmatjonmatkarimov.uz/',
+      },
+      features: {
+        en: [
+          "Single Page Application (SPA)",
+          "Tailwind CSS custom styling",
+          "Responsive and scalable design",
+        ],
+        uz: [
+          "Yagona sahifa ilovasi (SPA)",
+          "Tailwind CSS asosida maxsus dizayn",
+          "Kengayuvchan va moslashuvchan dizayn",
+        ],
+      },
+    },
+    {
+      title: {
+        en: "Weather App",
+        uz: "Ob-havo ilovasi",
+      },
+      description: {
+        en: "A real-time weather application built with Vue 3 and Bootstrap that fetches current weather data based on the user's location via OpenWeather API, featuring a Dark/Light mode toggle.",
+        uz: "Vue 3 va Bootstrap yordamida qurilgan ob-havo ilovasi. U OpenWeather API orqali foydalanuvchi joylashuviga ko'ra real-vaqtdagi ob-havo ma'lumotlarini taqdim etadi va qorong'u/yorug' mavzuni o'zgartirish funksiyasiga ega.",
+      },
+      tags: ["Vue 3", "Bootstrap", "Axios", "OpenWeather API", "Geolocation"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov/wather",
+        demo: 'https://wather.rahmatjonmatkarimov.uz/',
+      },
+      features: {
+        en: [
+          "Real-time weather data fetching",
+          "Automatic user geolocation detection",
+          "Dark and Light theme toggle",
+          "Glassmorphism UI design",
+        ],
+        uz: [
+          "Ob-havo ma'lumotlarini real-vaqtda olish",
+          "Foydalanuvchi joylashuvini avtomatik aniqlash",
+          "Qorong'u va yorug' mavzuni o'zgartirish",
+          "Glassmorphism uslubidagi UI dizayn",
+        ],
+      },
+    },
+    {
+      title: {
+        en: "AirPods Pro Landing Page",
+        uz: "AirPods Pro Landing Page",
+      },
+      description: {
+        en: "A responsive, purely HTML and CSS static landing page designed as a clone of the AirPods Pro website, demonstrating strong fundamental web design skills.",
+        uz: "AirPods Pro veb-sayti kloni sifatida mo'ljallangan faqat HTML va CSS dan tashkil topgan statik moslashuvchan landing page.",
+      },
+      tags: ["HTML5", "CSS3", "Responsive Design"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov/airPods_pro_HTML_CSS",
+        demo: 'https://air-pods-pro.rahmatjonmatkarimov.uz/',
+      },
+      features: {
+        en: [
+          "Static landing page clone",
+          "Flexbox and Grid based layout",
+          "Custom CSS styling",
+        ],
+        uz: [
+          "Statik klon landing page",
+          "Flexbox va Grid asosidagi joylashuv",
+          "Maxsus CSS dizayn va uslublar",
         ],
       },
     },
