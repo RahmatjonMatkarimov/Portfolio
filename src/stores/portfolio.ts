@@ -249,6 +249,35 @@ export const usePortfolioStore = defineStore("portfolio", () => {
   const projects = ref([
     {
       title: {
+        en: "File to PDF Converter",
+        uz: "PDF Konvertor (Fayllarni PDF'ga aylantirish)",
+      },
+      description: {
+        en: "A robust web application to easily convert various document formats (Word, Excel, Images, etc.) into PDF. Features a sleek, modern drag-and-drop interface.",
+        uz: "Word, Excel, Rasm va istalgan hujjatni tez va oson PDF formatiga o'tkazuvchi veb-ilova. Zamonaviy drag-and-drop interfeysiga ega.",
+      },
+      tags: ["Vue 3", "Tailwind CSS v4", "NestJS", "LibreOffice"],
+      links: {
+        github: "https://github.com/RahmatjonMatkarimov/pdf-convertor",
+        demo: null,
+      },
+      features: {
+        en: [
+          "Drag-and-drop file upload interface",
+          "Multiple format support (DOCX, XLSX, PPTX, JPG, etc.)",
+          "Fast backend processing with NestJS & LibreOffice",
+          "Modern Glassmorphism UI with Tailwind v4",
+        ],
+        uz: [
+          "Fayllarni drag-and-drop orqali qulay yuklash",
+          "Turli formatlarni qo'llab-quvvatlash (DOCX, XLSX, PPTX, JPG va hk.)",
+          "NestJS va LibreOffice orqali tezkor backend ishlashi",
+          "Tailwind v4 asosidagi zamonaviy Glassmorphism dizayn",
+        ],
+      },
+    },
+    {
+      title: {
         en: "OsonQR - Free QR Code Generator",
         uz: "OsonQR - Bepul QR Kod Generatori",
       },
