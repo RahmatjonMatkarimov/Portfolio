@@ -198,8 +198,8 @@ export const usePortfolioStore = defineStore("portfolio", () => {
   const experiences = ref([
     {
       role: {
-        en: "Frontend Developer",
-        uz: "Frontend Dasturchi",
+        en: "Frontend Engineer",
+        uz: "Frontend Muhandis",
       },
       company: "Yurist Konsalting X/K",
       date: {
@@ -207,41 +207,41 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         uz: "Yanvar 2025 - Hozirgacha",
       },
       description: {
-        en: "Working on frontend development tasks and contributing to web application interfaces. Collaborating with the backend team to integrate REST APIs.",
-        uz: "Frontend ishlab chiqish vazifalari ustida ishlash va veb-ilova interfeyslariga hissa qo'shish. REST API'larni integratsiya qilish uchun backend jamoasi bilan hamkorlik qilish.",
+        en: "Developed and maintained highly responsive web interfaces for legal consulting services. Successfully integrated complex RESTful APIs and collaborated with backend engineers to ensure seamless data synchronization and peak performance using Vue.js ecosystem.",
+        uz: "Yuridik konsalting xizmatlari uchun yuqori darajada moslashuvchan veb-interfeyslarni ishlab chiqish va qo'llab-quvvatlash. Murakkab RESTful API'larni muvaffaqiyatli integratsiya qilish va backend jamoasi bilan ma'lumotlar sinxronizatsiyasini ta'minlashda faol ishtirok etish.",
       },
     },
   ]);
 
   const education = ref([
     {
-      school: "Najot Ta'lim",
+      school: "Najot Ta'lim IT Academy",
       role: {
-        en: "Backend Developer",
-        uz: "Backend Dasturchi",
+        en: "Backend Engineering (Node.js/NestJS)",
+        uz: "Backend Muhandisligi (Node.js/NestJS)",
       },
       date: {
         en: "May 2025 - Dec 2025",
         uz: "May 2025 - Dekabr 2025",
       },
       description: {
-        en: "An 8-month intensive backend web development program focused on modern software engineering practices, Node.js, RESTful APIs, databases, and system design principles.",
-        uz: "Zamonaviy dasturiy ta'minot muhandisligi amaliyoti, Node.js, RESTful API, ma'lumotlar bazalari va tizim dizayni tamoyillariga yo'naltirilgan 8 oylik intensiv backend veb-ishlab chiqish dasturi.",
+        en: "Completed an intensive 8-month software engineering bootcamp at Uzbekistan's leading IT Academy. Mastered Node.js, NestJS, microservices architecture, database design (PostgreSQL/MongoDB), and enterprise-grade API development.",
+        uz: "O'zbekistonning yetakchi IT akademiyasida 8 oylik intensiv dasturiy ta'minot muhandisligi kursini tamomladim. Node.js, NestJS, mikroxizmatlar arxitekturasi va ma'lumotlar bazasi (PostgreSQL/MongoDB) dizaynini mukammal o'zlashtirdim.",
       },
     },
     {
-      school: "IT Park Xorazm",
+      school: "IT Park Academy Xorazm",
       role: {
-        en: "Frontend Developer",
-        uz: "Frontend Dasturchi",
+        en: "Modern Frontend Engineering",
+        uz: "Zamonaviy Frontend Muhandisligi",
       },
       date: {
         en: "Apr 2024 - Oct 2024",
         uz: "Aprel 2024 - Oktyabr 2024",
       },
       description: {
-        en: "A 6-month intensive frontend web development program covering modern software engineering approaches, Vue.js, and system design fundamentals.",
-        uz: "Zamonaviy dasturiy muhandislik yondashuvlari, Vue.js va tizim dizayni asoslarini qamrab oluvchi 6 oylik intensiv frontend veb-ishlab chiqish dasturi.",
+        en: "Specialized in advanced frontend patterns, Vue.js lifecycle, and state management systems. Focused on performance optimization, responsive design principles, and modern build tools (Vite/Webpack).",
+        uz: "Ilg'or frontend patternlari, Vue.js lifecycle va holatni boshqarish (state management) tizimlari bo'yicha ixtisoslashdim. Ish samaradorligini optimallashtirish va zamonaviy build vositalari (Vite/Webpack) bilan ishlashga e'tibor qaratildi.",
       },
     },
   ]);
@@ -249,101 +249,101 @@ export const usePortfolioStore = defineStore("portfolio", () => {
   const projects = ref([
     {
       title: {
-        en: "File to PDF Converter",
-        uz: "PDF Konvertor (Fayllarni PDF'ga aylantirish)",
+        en: "Enterprise Document Processor",
+        uz: "Hujjatlarni PDF'ga aylantirish tizimi",
       },
       description: {
-        en: "A robust web application to easily convert various document formats (Word, Excel, Images, etc.) into PDF. Features a sleek, modern drag-and-drop interface.",
-        uz: "Word, Excel, Rasm va istalgan hujjatni tez va oson PDF formatiga o'tkazuvchi veb-ilova. Zamonaviy drag-and-drop interfeysiga ega.",
+        en: "A high-performance document processing engine that handles cross-platform conversions (Word, Excel, Images) with precision using LibreOffice server integration and NestJS.",
+        uz: "LibreOffice server integratsiyasi va NestJS yordamida Word, Excel va rasm kabi hujjatlarni yuqori aniqlikda PDF formatiga o'tkazuvchi professional tizim.",
       },
-      tags: ["Vue 3", "Tailwind CSS v4", "NestJS", "LibreOffice"],
+      tags: ["NestJS", "Vue 3", "LibreOffice", "Tailwind CSS v4", "Vite"],
       links: {
         github: "https://github.com/RahmatjonMatkarimov/pdf-convertor",
         demo: null,
       },
       features: {
         en: [
-          "Drag-and-drop file upload interface",
-          "Multiple format support (DOCX, XLSX, PPTX, JPG, etc.)",
-          "Fast backend processing with NestJS & LibreOffice",
-          "Modern Glassmorphism UI with Tailwind v4",
+          "Enterprise-grade conversion using LibreOffice-convert",
+          "Asynchronous file processing with NestJS and clean architecture",
+          "Advanced drag-and-drop UI with real-time progress tracking",
+          "Optimized for high-speed document rendering and security",
         ],
         uz: [
-          "Fayllarni drag-and-drop orqali qulay yuklash",
-          "Turli formatlarni qo'llab-quvvatlash (DOCX, XLSX, PPTX, JPG va hk.)",
-          "NestJS va LibreOffice orqali tezkor backend ishlashi",
-          "Tailwind v4 asosidagi zamonaviy Glassmorphism dizayn",
+          "LibreOffice-convert yordamida korporativ darajadagi konvertatsiya",
+          "NestJS va toza arxitektura asosida asinxron fayl ishlov berish",
+          "Real-vaqtda yuklash jarayonini kuzatuvchi ilg'or interfeys",
+          "Yuqori tezlikdagi renderlash va xavfsizlik uchun optimallashgan",
         ],
       },
     },
     {
       title: {
-        en: "OsonQR - Free QR Code Generator",
-        uz: "OsonQR - Bepul QR Kod Generatori",
+        en: "OsonQR - Professional QR Ecosystem",
+        uz: "OsonQR - Professional QR Ekotizimi",
       },
       description: {
-        en: "A comprehensive and free QR Code generator tool. Easily create stylized QR codes for URLs, WiFi, SMS, vCard, social media, and more.",
-        uz: "URL, WiFi, SMS, vCard, ijtimoiy tarmoqlar va boshqalar uchun bepul va qulay QR kod yaratish vositasi.",
+        en: "A feature-rich QR code generation platform focused on accessibility and UX. Supports secure vCards, WiFi configurations, and advanced visual customization with Tailwind v4.",
+        uz: "Foydalanishga qulay va yuqori UX darajasiga ega QR kod yaratish platformasi. Xavfsiz vCard, WiFi sozlamalari va Tailwind v4 asosidagi maxsus vizual dizaynni qo'llab-quvvatlaydi.",
       },
-      tags: ["Vue 3", "Tailwind CSS v4", "QR Code", "Vite"],
+      tags: ["Vue 3", "Tailwind CSS v4", "i18n", "Vite", "SEO"],
       links: {
         github: "https://github.com/RahmatjonMatkarimov/osonQR",
         demo: "https://osonqr.rahmatjonmatkarimov.uz/",
       },
       features: {
         en: [
-          "Multiple QR types (URL, WiFi, vCard, SMS, etc.)",
-          "Custom visual styling & logo injection",
-          "Tailwind v4 high-speed UI transitions",
-          "Multilingual support (i18n)",
+          "Advanced QR types (vCard, WiFi, SMS, Social Media)",
+          "Dynamic visual styling and business logo injection",
+          "High-performance UI built with Tailwind CSS v4",
+          "Full internationalization (i18n) support for global users",
         ],
         uz: [
-          "Turli xil QR turlari (URL, WiFi, vCard, SMS va hokazo)",
-          "Maxsus vizual dizayn qism va logotip qoshish",
-          "Tailwind v4 tezkor interfeysi",
-          "Ko'p tilli interfeys (i18n)",
+          "Ilg'or QR turlari (vCard, WiFi, SMS, Ijtimoiy tarmoqlar)",
+          "Dinamik vizual dizayn va biznes logotiplarini joylashtirish",
+          "Tailwind CSS v4 asosidagi yuqori samarali interfeys",
+          "Xalqaro foydalanuvchilar uchun to'liq i18n ko'p tilli tizimi",
         ],
       },
     },
     {
       title: {
-        en: "Shop Automation System",
-        uz: "Do'kon avtomatlashtirish tizimi",
+        en: "shop automation system",
+        uz: "do'konni automatlashtirish tizimi",
       },
       description: {
-        en: "A robust retail management ecosystem with a NestJS/Prisma backend, Vue 3 dashboard featuring real-time analytics, and an Expo mobile app for barcode-driven operations.",
-        uz: "NestJS va Prisma backend, real-vaqt tahlillariga ega Vue 3 paneli va shtrix-kodlar bilan ishlaydigan Expo mobil ilovasidan iborat do'kon boshqaruv tizimi.",
+        en: "A comprehensive business automation suite featuring a NestJS/Prisma backend, interactive Vue 3 dashboard for real-time analytics, and an Expo mobile app for barcode workflows.",
+        uz: "NestJS va Prisma backend, real-vaqtda tahlillar beruvchi Vue 3 paneli va shtrix-kodlar bilan ishlaydigan Expo mobil ilovasidan iborat biznesni avtomatlashtirish ekotizimi.",
       },
-      tags: ["NestJS", "Vue 3", "React Native", "PostgreSQL", "Prisma"],
+      tags: ["NestJS", "Prisma", "PostgreSQL", "Vue 3", "React Native", "Expo"],
       links: {
         github: null,
         demo: null,
       },
       features: {
         en: [
-          "Real-time POS & Inventory tracking",
-          "Barcode scanner integration (Mobile & Web)",
-          "Monthly/Yearly sales analytics with charts",
-          "Low-stock alerts & best-seller reports",
-          "Secure multi-role JWT authentication",
+          "Scalable NestJS architecture with Prisma ORM and PostgreSQL",
+          "Real-time inventory tracking and POS (Point of Sale) operations",
+          "Cross-platform mobile solution with integrated barcode scanning",
+          "Complex data visualization for sales and revenue analytics",
+          "Enterprise-grade JWT authentication and role-based security",
         ],
         uz: [
-          "To'liq kassa va ombor boshqaruv tizimi",
-          "Shtrix-kod skaneri (mobil va veb uchun)",
-          "Oylik va yillik savdo statistikasi va hisobotlar",
-          "Kam qolgan va ko'p sotilgan mahsulotlar tahlili",
-          "Barcha qurilmalarda ma'lumotlarning real-vaqtdagi sinxronizatsiyasi",
+          "Prisma ORM va PostgreSQL bilan kengayuvchan NestJS arxitekturasi",
+          "Real-vaqtdagi ombor kontoli va kassa (POS) operatsiyalari",
+          "Shtrix-kod skaneri integratsiyalangan mobil ilova (Expo)",
+          "Savdo va foyda tahlillari uchun murakkab ma'lumotlar vizualizatsiyasi",
+          "JWT asosidagi xavfsizlik va rollarga asoslangan kirish nazorati",
         ],
       },
     },
     {
       title: {
-        en: "Murodbek Matkarimov - SMM Portfolio",
-        uz: "Murodbek Matkarimov - SMM Portfolio",
+        en: "Murodbek Matkarimov - Marketing Suite",
+        uz: "Murodbek Matkarimov - Marketing Vizitka",
       },
       description: {
-        en: "A premium vCard for an SMM & Digital Marketing specialist. Developed using Vue 3 and the latest Tailwind CSS v4 for peak performance.",
-        uz: "SMM va Digital Marketing mutaxassisi uchun premium vizitka sayti. Vue 3 va eng so'nggi Tailwind CSS v4 texnologiyasi asosida yuqori tezlik bilan yaratilgan.",
+        en: "A premium digital vCard and service showcase for an SMM specialist. Engineered with Vue 3 and Tailwind CSS v4 for maximum performance and SEO visibility.",
+        uz: "SMM mutaxassisi uchun premium darajadagi raqamli xizmatlar ko'rgazmasi. Vue 3 va Tailwind CSS v4 yordamida maksimal tezlik va SEO uchun optimallashgan holda yaratilgan.",
       },
       tags: ["Vue 3", "Tailwind CSS v4", "SEO", "Vite"],
       links: {
@@ -352,45 +352,45 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       features: {
         en: [
-          "Specialized SMM Service Catalog",
-          "Tailwind v4 high-speed UI transitions",
-          "Direct Instagram & Telegram business API",
-          "SEO-ready semantic HTML structure",
+          "Optimized Service Catalog for high conversion",
+          "State-of-the-art animations with Tailwind v4 transitions",
+          "Direct Business API integration for Telegram/Instagram",
+          "Semantic HTML5 structure for peak SEO performance",
         ],
         uz: [
-          "Sohaga oid maxsus SMM xizmatlar katalogi",
-          "Tailwind v4 asosidagi yuqori tezlikdagi animatsiyalar",
-          "Instagram va Telegram orqali to'g'ridan-to'g'ri bog'lanish",
-          "SEO uchun optimallashgan semantik tuzilish",
+          "Yuqori konversiya uchun optimallashgan xizmatlar katalogi",
+          "Tailwind v4 yordamida zamonaviy va tezkor animatsiyalar",
+          "Telegram va Instagram uchun to'g'ridan-to'g'ri biznes integratsiya",
+          "SEO uchun mukammal semantic HTML5 struktura",
         ],
       },
     },
     {
       title: {
-        en: "Boburjon Bobojonov - Trading Portfolio",
-        uz: "Boburjon Bobojonov - Trading Portfolio",
+        en: "Boburjon Bobojonov - Brand Identity",
+        uz: "Boburjon Bobojonov - Brend Vizitka",
       },
       description: {
-        en: "An elegant, gold-themed trading portfolio optimized for personal branding. Features a custom CSS stagger animation system.",
-        uz: "Shaxsiy brending uchun mo'ljallangan, oltin rangli va lyuks uslubdagi trading portfoliosi. Maxsus CSS kaskadli animatsiya tizimi bilan boyitilgan.",
+        en: "An elegant, gold-themed personal branding portfolio featuring a custom CSS stagger animation system for a luxury user experience.",
+        uz: "Shaxsiy brending uchun maxsus CSS animatsiyalar bilan boyitilgan, oltin rangli va yuqori estetikali professional vizitka sayti.",
       },
-      tags: ["Vue 3", "Tailwind CSS v3", "Glassmorphism", "SEO"],
+      tags: ["Vue 3", "Tailwind CSS v3", "Glassmorphism", "CSS Animations"],
       links: {
         github: "https://github.com/RahmatjonMatkarimov/boburjon-bobojonov",
         demo: "https://boburjon-bobojonov.rahmatjonmatkarimov.uz/",
       },
       features: {
         en: [
-          "Luxury Gold-accented visual identity",
-          "Staggered entrance animations",
-          "One-page 'vCard' style layout",
-          "Optimized for fast mobile loading",
+          "Custom-engineered golden aesthetic brand identity",
+          "Staggered entrance animations for enhanced user engagement",
+          "Mobile-first responsive architecture with zero layout shift",
+          "Optimized asset delivery for ultra-fast loading speeds",
         ],
         uz: [
-          "Oltin rangli lyuks vizual imidj",
-          "Kaskadli kirish animatsiyalari",
-          "Bir sahifali 'visitka' uslubidagi dizayn",
-          "Mobil qurilmalarda tez yuklanish uchun optimallashgan",
+          "Oltin rangli maxsus dizayn va premium brend imidji",
+          "Foydalanuvchi e'tiborini tortuvchi kaskadli animatsiyalar",
+          "Layout shiftlarsiz (CLS) mobil-birinchi arxitektura",
+          "O'ta tez yuklanish uchun optimallashgan resurslar",
         ],
       },
     },
@@ -427,12 +427,12 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     },
     {
       title: {
-        en: "Authentication System",
-        uz: "Autentifikatsiya tizimi",
+        en: "Modern Auth & Security Core",
+        uz: "Zamonaviy Autentifikatsiya Markazi",
       },
       description: {
-        en: "A robust REST API built with NestJS featuring JWT authentication, Role-Based Access Control, and Swagger documentation.",
-        uz: "JWT autentifikatsiyasi, rolga asoslangan kirishni boshqarish va Swagger hujjatlariga ega NestJS bilan qurilgan mustahkam REST API.",
+        en: "A production-ready Authorization & Authentication microservice built with NestJS, implementing industry-standard security protocols and RBAC.",
+        uz: "Sanoat standarti xavfsizlik protokollari va RBAC tizimi asosida NestJS bilan qurilgan, foydalanishga tayyor avtorizatsiya va autentifikatsiya mikroxizmati.",
       },
       tags: ["NestJS", "TypeScript", "PostgreSQL", "JWT", "Swagger"],
       links: {
@@ -441,119 +441,113 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       features: {
         en: [
-          "JWT authentication (access & refresh tokens)",
-          "Password hashing with bcrypt",
-          "Role-protected endpoints",
-          "User CRUD operations",
-          "Swagger API documentation",
+          "Advanced JWT strategy with Access & Refresh token rotation",
+          "Secure password hashing implementing bcrypt industry standards",
+          "Granular Role-Based Access Control (RBAC) and data protection",
+          "Comprehensive API documentation using Swagger / OpenAPI",
+          "Scalable User and Profile management lifecycle",
         ],
         uz: [
-          "JWT autentifikatsiyasi (access va refresh token)",
-          "bcrypt bilan parollarni xesh-lash",
-          "Rollar bilan himoyalangan yo'llar",
-          "Foydalanuvchi CRUD operatsiyalari",
-          "Swagger API hujjatlari",
+          "Access va Refresh token rotatsiyasiga ega ilg'or JWT strategiyasi",
+          "bcrypt standarti bo'yicha parollarni xavfsiz xesh-lash",
+          "Rollar bo'yicha aniq kirish nazorati (RBAC) va xavfsizlik",
+          "Swagger / OpenAPI yordamida batafsil API hujjatlari",
+          "Foydalanuvchilar va profillarni boshqarishning kengayuvchan tizimi",
         ],
       },
     },
         {
       title: {
-        en: "Khiva-Soft",
-        uz: "Khiva-Soft",
+        en: "Khiva-Soft Corporate Portal",
+        uz: "Khiva-Soft Korporativ Portali",
       },
       description: {
-        en: "A modern corporate website built with Vue.js and fully styled with Tailwind CSS, utilizing Vue Router for smooth SPA navigation.",
-        uz: "Vue.js yordamida qurilgan, to'liq Tailwind CSS bilan bezatilgan va qulay SPA navigatsiyasi uchun Vue Router dan foydalanilgan zamonaviy korporativ veb-sayt.",
+        en: "A modern corporate presence for an IT solutions firm, utilizing Vue Router for seamless SPA navigation and Tailwind CSS for a scalable design system.",
+        uz: "IT-echimlar firmasi uchun Vue Router va Tailwind CSS yordamida yaratilgan, qulay SPA navigatsiyasiga ega zamonaviy korporativ portal.",
       },
-      tags: ["Vue 3", "Tailwind CSS", "Vue Router", "Vite"],
+      tags: ["Vue 3", "Tailwind CSS", "Vue Router", "SPA"],
       links: {
         github: "https://github.com/RahmatjonMatkarimov/Khiva-Soft",
         demo: 'https://khiva-soft.rahmatjonmatkarimov.uz/',
       },
       features: {
         en: [
-          "Single Page Application (SPA)",
-          "Tailwind CSS custom styling",
-          "Responsive and scalable design",
+          "Lightning-fast Single Page Application (SPA) architecture",
+          "Modular CSS design system for consistent branding",
+          "SEO-optimized content structure and fast navigation",
+          "Fully responsive layout across all device viewports",
         ],
         uz: [
-          "Yagona sahifa ilovasi (SPA)",
-          "Tailwind CSS asosida maxsus dizayn",
-          "Kengayuvchan va moslashuvchan dizayn",
+          "Yashin tezligidagi SPA (Single Page Application) arxitekturasi",
+          "Brend imidji uchun modulli CSS dizayn tizimi",
+          "SEO-optimallashgan kontent va qulay navigatsiya",
+          "Barcha turdagi qurilmalar uchun to'liq moslashuvchan interfeys",
         ],
       },
     },
     {
       title: {
-        en: "Weather App",
-        uz: "Ob-havo ilovasi",
+        en: "Dynamic Weather Intelligence",
+        uz: "Dinamik Ob-havo Markazi",
       },
       description: {
-        en: "A real-time weather application built with Vue 3 and Bootstrap that fetches current weather data based on the user's location via OpenWeather API, featuring a Dark/Light mode toggle.",
-        uz: "Vue 3 va Bootstrap yordamida qurilgan ob-havo ilovasi. U OpenWeather API orqali foydalanuvchi joylashuviga ko'ra real-vaqtdagi ob-havo ma'lumotlarini taqdim etadi va qorong'u/yorug' mavzuni o'zgartirish funksiyasiga ega.",
+        en: "A real-time weather analytics application featuring automatic geolocation detection and interactive UI elements using OpenWeather API integration.",
+        uz: "OpenWeather API integratsiyasi orqali real-vaqtdagi ob-havo tahlillarini taqdim etuvchi, avtomatik geolokatsiya va interaktiv UI elementlariga ega ilova.",
       },
-      tags: ["Vue 3", "Bootstrap", "Axios", "OpenWeather API", "Geolocation"],
+      tags: ["Vue 3", "OpenWeather API", "Axios", "Geolocation"],
       links: {
         github: "https://github.com/RahmatjonMatkarimov/wather",
         demo: 'https://wather.rahmatjonmatkarimov.uz/',
       },
       features: {
         en: [
-          "Real-time weather data fetching",
-          "Automatic user geolocation detection",
-          "Dark and Light theme toggle",
-          "Glassmorphism UI design",
+          "Precise real-time weather data fetching via OpenWeather API",
+          "Automated user geolocation via Browser Geolocation API",
+          "Sophisticated Dark/Light theme orchestration",
+          "Modern Glassmorphism UI components with smooth transitions",
         ],
         uz: [
-          "Ob-havo ma'lumotlarini real-vaqtda olish",
-          "Foydalanuvchi joylashuvini avtomatik aniqlash",
-          "Qorong'u va yorug' mavzuni o'zgartirish",
-          "Glassmorphism uslubidagi UI dizayn",
+          "OpenWeather API orqali aniq real-vaqtda ob-havo ma'lumotlari",
+          "Browser Geolocation API orqali avtomatik joylashuvni aniqlash",
+          "Tizimli Dark/Light mavzu almashtirgich",
+          "Yumshoq o'tishlarga ega zamonaviy Glassmorphism UI komponentlari",
         ],
       },
     },
     {
       title: {
-        en: "AirPods Pro Landing Page",
-        uz: "AirPods Pro Landing Page",
+        en: "AirPods Pro - Visual Clone",
+        uz: "AirPods Pro - Vizual Klon",
       },
       description: {
-        en: "A responsive, purely HTML and CSS static landing page designed as a clone of the AirPods Pro website, demonstrating strong fundamental web design skills.",
-        uz: "AirPods Pro veb-sayti kloni sifatida mo'ljallangan faqat HTML va CSS dan tashkil topgan statik moslashuvchan landing page.",
+        en: "A high-fidelity clone of the AirPods Pro landing page, demonstrating mastery of fundamental HTML5/CSS3 and complex Flexbox/Grid layouts.",
+        uz: "AirPods Pro landing page-ning yuqori aniqlikdagi kloni. HTML5/CSS3 hamda murakkab Flexbox va Grid joylashuvlari boyicha kuchli ko'nikmalarni namoyish etadi.",
       },
-      tags: ["HTML5", "CSS3", "Responsive Design"],
+      tags: ["HTML5", "CSS3", "Responsive Design", "UI/UX"],
       links: {
         github: "https://github.com/RahmatjonMatkarimov/airPods_pro_HTML_CSS",
         demo: 'https://air-pods-pro.rahmatjonmatkarimov.uz/',
       },
       features: {
         en: [
-          "Static landing page clone",
-          "Flexbox and Grid based layout",
-          "Custom CSS styling",
+          "Pixel-perfect visual replication of Apple design standards",
+          "Advanced responsive behavior using CSS Grid and Flexbox",
+          "Optimized static asset delivery for maximum performance",
         ],
         uz: [
-          "Statik klon landing page",
-          "Flexbox va Grid asosidagi joylashuv",
-          "Maxsus CSS dizayn va uslublar",
+          "Apple dizayn standartlariga mos keluvchi pixel-perfect klon",
+          "CSS Grid va Flexbox yordamida ilg'or moslashuvchanlik",
+          "Maksimal samaradorlik uchun optimallashgan statik resurslar",
         ],
       },
     },
   ]);
 
   const skills = ref({
-    Backend: ["Node.js", "Express.js", "NestJS", "Microservices"],
-    Frontend: ["HTML5", "CSS3", "Vue.js", "React (Basic)"],
-    "Mobile & Tools": [
-      "React Native (basic)",
-      "JavaScript",
-      "TypeScript",
-      "Linux",
-      "Git",
-      "Nginx",
-      "SSL/TLS",
-    ],
-    Database: ["MongoDB", "PostgreSQL"],
+    Backend: ["Node.js", "NestJS", "Express.js", "Microservices", "RESTful APIs"],
+    Frontend: ["Vue 3", "Vite", "Pinia", "Tailwind CSS v4", "GSAP Animations"],
+    "Database & ORM": ["PostgreSQL", "MongoDB", "Prisma ORM"],
+    "Tools & DevOps": ["TypeScript", "Git", "Linux", "Nginx", "Docker (Basic)", "SSL/TLS"],
   });
 
   const socialLinks = ref([
