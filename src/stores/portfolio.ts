@@ -254,7 +254,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       description: {
         en: "A high-performance document processing engine that handles cross-platform conversions (Word, Excel, Images) with precision using LibreOffice server integration and NestJS.",
-        uz: "LibreOffice server integratsiyasi va NestJS yordamida Word, Excel va rasm kabi hujjatlarni yuqori aniqlikda PDF formatiga o'tkazuvchi professional tizim.",
+        uz: "LibreOffice server integratsiyasi va NestJS yordamida Word, Excel va rasm kabi hujjatlarni yuqori aniqlikda PDF formatiga o'tkazuvchi mukammal tizim.",
       },
       tags: ["NestJS", "Vue 3", "LibreOffice", "Tailwind CSS v4", "Vite"],
       links: {
@@ -278,8 +278,8 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     },
     {
       title: {
-        en: "OsonQR - Professional QR Ecosystem",
-        uz: "OsonQR - Professional QR Ekotizimi",
+        en: "OsonQR - Advanced QR Ecosystem",
+        uz: "OsonQR - Ilg'or QR Ekotizimi",
       },
       description: {
         en: "A feature-rich QR code generation platform focused on accessibility and UX. Supports secure vCards, WiFi configurations, and advanced visual customization with Tailwind v4.",
@@ -308,7 +308,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     {
       title: {
         en: "shop automation system",
-        uz: "do'konni automatlashtirish tizimi",
+        uz: "do'konni avtomatlashtirish tizimi",
       },
       description: {
         en: "A comprehensive business automation suite featuring a NestJS/Prisma backend, interactive Vue 3 dashboard for real-time analytics, and an Expo mobile app for barcode workflows.",
@@ -372,7 +372,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       description: {
         en: "An elegant, gold-themed personal branding portfolio featuring a custom CSS stagger animation system for a luxury user experience.",
-        uz: "Shaxsiy brending uchun maxsus CSS animatsiyalar bilan boyitilgan, oltin rangli va yuqori estetikali professional vizitka sayti.",
+        uz: "Shaxsiy brending uchun maxsus CSS animatsiyalar bilan boyitilgan, oltin rangli va yuqori estetikali sifatli vizitka sayti.",
       },
       tags: ["Vue 3", "Tailwind CSS v3", "Glassmorphism", "CSS Animations"],
       links: {
@@ -400,7 +400,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
         uz: "Muhammadjon Xusainboyev - Portfolio",
       },
       description: {
-        en: "An interactive trading portfolio and professional vCard. Built with Vue 3 and GSAP for high-end scroll animations and a seamless dark/light mode experience.",
+        en: "An interactive trading portfolio and a modern vCard. Built with Vue 3 and GSAP for high-end scroll animations and a seamless dark/light mode experience.",
         uz: "Moliya bozori tahlilchisi va treder uchun interaktiv 'visitka' (vCard) sayti. Vue 3 va GSAP yordamida yuqori sifatli animatsiyalar va qulay dark/light mode tizimi bilan yaratilgan.",
       },
       tags: ["Vue 3", "GSAP", "Tailwind CSS", "ScrollTrigger"],
@@ -463,7 +463,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       description: {
         en: "A modern corporate presence for an IT solutions firm, utilizing Vue Router for seamless SPA navigation and Tailwind CSS for a scalable design system.",
-        uz: "IT-echimlar firmasi uchun Vue Router va Tailwind CSS yordamida yaratilgan, qulay SPA navigatsiyasiga ega zamonaviy korporativ portal.",
+        uz: "IT-yechimlar firmasi uchun Vue Router va Tailwind CSS yordamida yaratilgan, qulay SPA navigatsiyasiga ega zamonaviy korporativ portal.",
       },
       tags: ["Vue 3", "Tailwind CSS", "Vue Router", "SPA"],
       links: {

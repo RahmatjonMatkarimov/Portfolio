@@ -14,9 +14,9 @@ const router = createRouter({
       name: "home",
       component: HomeView,
       meta: {
-        title: "Rahmatjon Matkarimov - Full Stack Developer",
+        title: "Rahmatjon Matkarimov | Full Stack Dasturchi | Node.js, NestJS & Vue.js",
         description:
-          "Portfolio of Rahmatjon Matkarimov - Full Stack Developer specializing in NestJS, Node.js, Vue.js and Microservices architecture. Based in Xorazm, Uzbekistan.",
+          "Rahmatjon Matkarimov - NestJS, Node.js va Vue.js yo'nalishlarida tajribali Full Stack dasturchi. Zamonaviy veb-saytlar va Telegram botlar yaratish xizmatlari.",
       },
     },
     {
@@ -24,9 +24,9 @@ const router = createRouter({
       name: "about",
       component: AboutView,
       meta: {
-        title: "About Me | Rahmatjon Matkarimov",
+        title: "Men haqimda | Tajriba va Ta'lim | Rahmatjon Matkarimov",
         description:
-          "Learn more about Rahmatjon Matkarimov, a Full Stack developer from Uzbekistan with a passion for building scalable systems.",
+          "Rahmatjon Matkarimovning IT sohasidagi sayohati, tajribasi va ta'limi bilan batafsil tanishing. Full Stack dasturchi sifatidagi mutaxassisligi.",
       },
     },
     {
@@ -34,9 +34,9 @@ const router = createRouter({
       name: "projects",
       component: ProjectsView,
       meta: {
-        title: "Projects | Rahmatjon Matkarimov",
+        title: "Loyihalar va Portfolio | Bajarilgan Ishlar | Rahmatjon Matkarimov",
         description:
-          "Explore the Full Stack development projects and software solutions built by Rahmatjon Matkarimov.",
+          "Bajarilgan loyihalar portfolioli: Korporativ tizimlar, PDF konvertorlar, QR ekotizimlari va boshqa murakkab veb-yechimlar to'plami.",
       },
     },
     {
@@ -44,9 +44,9 @@ const router = createRouter({
       name: "services",
       component: ServicesView,
       meta: {
-        title: "Services | Rahmatjon Matkarimov",
+        title: "Xizmatlar | Veb-sayt va Bot yaratish | Rahmatjon Matkarimov",
         description:
-          "Professional Full Stack development services, Telegram bots, and business system solutions by Rahmatjon Matkarimov.",
+          "Veb-saytlar yaratish, Telegram botlar, backend tizimlari va biznesni avtomatlashtirish bo'yicha sifatli IT xizmatlari.",
       },
     },
     {
@@ -54,9 +54,9 @@ const router = createRouter({
       name: "skills",
       component: SkillsView,
       meta: {
-        title: "Skills | Rahmatjon Matkarimov",
+        title: "Ko'nikmalar va Texnologiyalar | Rahmatjon Matkarimov",
         description:
-          "Technical skills and technologies mastered by Rahmatjon Matkarimov, including NestJS, Node.js, Vue.js, TypeScript, and database management.",
+          "Dasturlash tillari va texnologiyalari: NestJS, Node.js, Vue.js, TypeScript, PostgreSQL, MongoDB, Prisma va zamonaviy frontend texnologiyalari.",
       },
     },
     {
@@ -64,9 +64,9 @@ const router = createRouter({
       name: "contact",
       component: ContactView,
       meta: {
-        title: "Contact | Rahmatjon Matkarimov",
+        title: "Aloqa va Bog'lanish | Loyiha Buyurtma Berish | Rahmatjon Matkarimov",
         description:
-          "Get in touch with Rahmatjon Matkarimov to discuss Full Stack development opportunities and collaborations.",
+          "Loyiha buyurtma qilish yoki hamkorlik masalalarida Rahmatjon Matkarimov bilan bog'laning. Telegram, Instagram va Email orqali tezkor aloqa.",
       },
     },
   ],

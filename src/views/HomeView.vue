@@ -42,7 +42,7 @@ onUnmounted(() => {
 
     <!-- Hero Section -->
     <section
-      class="min-h-[90svh] flex items-center relative overflow-hidden bg-white dark:bg-[#020617] transition-colors duration-500 pt-12 md:pt-16">
+      class="min-h-[100svh] flex items-center relative overflow-hidden bg-white dark:bg-[#020617] transition-colors duration-500 pt-12 md:pt-16">
 
       <!-- Background Effects -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">

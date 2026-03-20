@@ -113,7 +113,8 @@ const getGradient = (index: number) => {
 
       <div v-if="limit && projects.length > limit" class="mt-12 md:mt-20 text-center">
         <router-link to="/projects"
-          class="inline-flex items-center gap-2.5 px-5 md:px-8 py-2.5 md:py-4 rounded-xl md:rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-black text-xs md:text-sm transition-all duration-500 hover:scale-105 group shadow-xl">
+          class="inline-flex items-center gap-2.5 px-5 md:px-8 py-2.5 md:py-4 rounded-xl md:rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-black text-xs md:text-sm transition-all duration-500 hover:scale-105 group shadow-xl"
+          :aria-label="t.projects.viewAll + ' - Barcha loyihalarni ko\'rish'" :title="t.projects.viewAll">
           {{ t.projects.viewAll }}
           <ArrowUpRight
             class="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

@@ -105,7 +105,8 @@ onUnmounted(() => {
 
 
           <router-link to="/contact"
-            class="px-4 md:px-6 py-2 md:py-3 rounded-lg md:rounded-xl bg-white dark:bg-white text-slate-900 font-black text-[9px] md:text-[11px] tracking-widest uppercase transition-all duration-500 hover:scale-105 active:scale-95 flex items-center gap-2">
+            class="px-4 md:px-6 py-2 md:py-3 rounded-lg md:rounded-xl bg-white dark:bg-white text-slate-900 font-black text-[9px] md:text-[11px] tracking-widest uppercase transition-all duration-500 hover:scale-105 active:scale-95 flex items-center gap-2"
+            :aria-label="t.nav.talk + ' - Bog\'lanish'" :title="t.nav.talk">
             {{ t.nav.talk }}
             <ArrowUpRight class="w-3 h-3 md:w-4 md:h-4" />
           </router-link>
@@ -121,7 +122,8 @@ onUnmounted(() => {
 
 
         <button @click="toggleMobileMenu" class="relative group p-2.5 rounded-xl glass-dark"
-          :class="isDark ? 'text-white' : 'text-slate-900'">
+          :class="isDark ? 'text-white' : 'text-slate-900'"
+          aria-label="Menu" :aria-expanded="isMobileMenuOpen">
           <div
             class="relative flex overflow-hidden items-center justify-center w-[20px] h-[20px] transform transition-all duration-200">
             <div

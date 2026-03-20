@@ -1,7 +1,7 @@
 {
-    "name": "Rahmatjon Web Portfolio",
+    "name": "Rahmatjon Matkarimov | Full Stack Portfolio",
     "short_name": "Rahmatjon Web",
-    "description": "Portfolio of Rahmatjon Web (Rahmatjon Matkarimov) - Full Stack Developer",
+    "description": "Rahmatjon Matkarimov - Tajribali Full Stack dasturchi portfolioli. NestJS, Node.js va Vue.js yechimlari.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#020617",
