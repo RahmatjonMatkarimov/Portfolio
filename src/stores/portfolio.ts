@@ -184,7 +184,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     role: "Full Stack Developer",
     location: "Xorazm, Uzbekistan",
     email: "rahmatjon974@gmail.com",
-    phone: "+998 (33) 990 98 83",
+    phone: "+998 (91) 999 98 83",
     bio: {
       en: "Graduating from Najot Ta'lim in Backend programming and IT Park in Frontend development solidified my foundation in Full Stack engineering. This combined expertise allows me to build robust, scalable, and user-centric digital solutions from start to finish.",
       uz: "Najot Ta'limda Backend va IT Parkda Frontend yo'nalishlarini tamomlash Full Stack muhandisligi bo'yicha poydevorimni mustahkamladi. Ushbu birlashgan tajriba menga boshidan oxirigacha mustahkam, kengayuvchan va foydalanuvchiga yo'naltirilgan raqamli yechimlarni yaratish imkonini beradi.",
@@ -203,12 +203,12 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       },
       company: "Yurist Konsalting X/K",
       date: {
-        en: "Jan 2025 - Present",
-        uz: "Yanvar 2025 - Hozirgacha",
+        en: "Jan 2025 - July 2025",
+        uz: "Yanvar 2025 - Iyul 2025",
       },
       description: {
-        en: "Developed and maintained highly responsive web interfaces for legal consulting services. Successfully integrated complex RESTful APIs and collaborated with backend engineers to ensure seamless data synchronization and peak performance using Vue.js ecosystem.",
-        uz: "Yuridik konsalting xizmatlari uchun yuqori darajada moslashuvchan veb-interfeyslarni ishlab chiqish va qo'llab-quvvatlash. Murakkab RESTful API'larni muvaffaqiyatli integratsiya qilish va backend jamoasi bilan ma'lumotlar sinxronizatsiyasini ta'minlashda faol ishtirok etish.",
+        en: "Architected and delivered high-performance user interfaces for legal consulting services. Focused on implementing scalable component libraries with Vue 3 and Tailwind CSS v4, achieving significant improvements in page load speeds and user engagement through optimized state management systems.",
+        uz: "Yuridik konsalting xizmatlari uchun yuqori samarali foydalanuvchi interfeyslarini loyihalashtirdim va joriy qildim. Vue 3 va Tailwind CSS v4 yordamida kengayuvchan komponentlar kutubxonalarini yaratish, state management tizimlarini optimallashtirish orqali sayt tezligi va foydalanuvchi faolligini sezilarli darajada oshirishga erishdim.",
       },
     },
   ]);
@@ -307,12 +307,12 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     },
     {
       title: {
-        en: "shop automation system",
-        uz: "do'konni avtomatlashtirish tizimi",
+        en: "Advanced Retail Automation Suite",
+        uz: "Zamonaviy Savdo Avtomatlashtirish Tizimi",
       },
       description: {
-        en: "A comprehensive business automation suite featuring a NestJS/Prisma backend, interactive Vue 3 dashboard for real-time analytics, and an Expo mobile app for barcode workflows.",
-        uz: "NestJS va Prisma backend, real-vaqtda tahlillar beruvchi Vue 3 paneli va shtrix-kodlar bilan ishlaydigan Expo mobil ilovasidan iborat biznesni avtomatlashtirish ekotizimi.",
+        en: "A comprehensive business automation ecosystem featuring a NestJS/Prisma backend, interactive Vue 3 dashboard for real-time analytics, and an Expo mobile app with integrated barcode scanning capabilities.",
+        uz: "NestJS va Prisma backend, real-vaqtda tahlillar beruvchi Vue 3 paneli va shtrix-kod skaneri integratsiyalangan Expo mobil ilovasidan iborat mukammal savdo avtomatlashtirish ekotizimi.",
       },
       tags: ["NestJS", "Prisma", "PostgreSQL", "Vue 3", "React Native", "Expo"],
       links: {
